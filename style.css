@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Overpass", sans-serif;;
+    font-family: "Overpass", sans-serif;
     -webkit-font-smoothing:antialiased
 }
 
@@ -43,6 +43,7 @@ body{
     align-items: center;
 
     border-radius: 50%;
+
     margin-bottom: 30px;
 }
 
@@ -52,7 +53,7 @@ body{
     margin-bottom: 15px;
 }
 
-.car p{
+.card p{
     color: var(--light-grey);
     font-size: 15px;
     line-height: 24px;
@@ -87,12 +88,13 @@ body{
     cursor: pointer;
 }
 
-.botoes button::focus{
+.botoes button:focus{
     color: var(--white);
     background-color: var(--light-grey);
 }
 
-.card > button{
+.card > a{
+    display: block;
     width: 100%;
     padding: 13px;
     color: var(--white);
@@ -105,11 +107,13 @@ body{
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--white);
+    text-align: center;
+    text-decoration: none;
 
     transition: all ease-in-out 0.3s;
 }
 
-.card > button:hover{
+.card > a:hover{
     color: var(--orange);
     background-color: var(--white);
     cursor: pointer;
